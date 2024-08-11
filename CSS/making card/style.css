@@ -1,0 +1,27 @@
+.contant{
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(158, 158, 158);
+    width: 300px;
+    height: 415px;
+}
+h1{
+    text-align: start;
+}
+
+p{
+    text-align: start;
+}
+.image{
+    padding: 2%;
+    border-radius: 5px;
+width: 285px;
+}
+span{
+    text-align: center;
+}
+button{
+    border-radius: 50px;
+    background-color: aqua;
+    color: blue
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.navbar{
+    
+margin-right: 60px;
+padding: 20px;
+}
+
+.flipcart{
+padding-top: 20px;
+margin: 20px;
+}
+
+
+.input{
+    width: 400px;
+height: 30px;
+background-color: rgb(241, 235, 227);
+border: none;
+font-size: large;
+
+}
+
+.login{
+    text-decoration: none;
+    color: black;
+
+}
+
+.cart{
+    text-decoration: none;
+    color: black;
+
+}
+
+

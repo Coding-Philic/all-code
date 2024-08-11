@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+padding-left: 50px;
+}
+
+nav{
+    background-color: red;
+    position: relative;
+}
+
+img{
+    border-radius: 50%;
+    height: 50px;
+    margin-left: 90%;
+    position: fixed;
+    
+}
+
+.boxes{
+    display: flex;
+    margin-left: 50px;
+}
+
+.box1{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    
+
+}
+
+.box2{
+    height:200px;
+    width: 200px;
+    background-color: blue;
+margin-top: 50px;
+margin-left: 50px;
+}
+
+
+.box3{
+    height:100px;
+    width: 500px;
+    background-color: aqua;
+    margin: 50px;
+    border-radius: 50px;
+}
+
+span{
+    display: block;
+}

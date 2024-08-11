@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style>
+        .container {
+            height: 80vh;
+            width: 70vw;
+            background-color: red;
+        }
+
+        .box {
+            height: 8vh;
+            width: 7vw;
+            background-color: aqua;
+            animation: adnankaanimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-delay: 5s;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes adnankaanimation {
+            from {}
+
+            to {
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+
+</html>

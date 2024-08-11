@@ -1,0 +1,11 @@
+.box{
+    border: 2px solid black;
+padding: 34px;
+box-shadow: 5px 15px 5px #11faa1;
+}
+p{
+    text-shadow: 5px 5px 5px black; 
+outline: 2px solid black;
+border: 2px solid green;
+border-radius: 34px;
+}

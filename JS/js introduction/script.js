@@ -1,0 +1,7 @@
+alert("hello")
+alert("WELCOME TO MY WORD")
+alert("ENTER YOUR NAME")
+let a = prompt("Type Your Name")
+console.log("This is Your Name " + a)
+console.log("hello " + a)
+console.log("What can I do for you")

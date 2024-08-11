@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transition</title>
+<style>
+.container{
+background-color: antiquewhite;
+height: 50vh;
+width: 80vw;
+
+}
+.box{
+background-color: aqua;
+height: 50px;
+width: 80px;
+
+transition: all 3s ease-in-out 1s;
+}
+
+.t{
+    transform: translateX(50px) translateY(50px);
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box t">
+
+        </div>
+    </div>
+</body>
+</html>

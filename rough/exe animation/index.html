@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+<style>
+ .box{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+background-color: red;
+position: absolute;
+left: 0;
+bottom: 0;
+animation: animationx 4s linear infinite, animationy 1s ease-out infinite alternate;
+
+
+ }
+.continer{
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    background-color: blue;
+}
+
+@keyframes animationx {
+    from{
+left: 0;
+    }
+    to{
+left: 1000px;
+    }
+}
+
+@keyframes animationy {
+    from{
+bottom: 0;
+    }
+    to{
+       bottom: 300px;
+}
+</style>
+</head>
+<body>
+    <div class="continer">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

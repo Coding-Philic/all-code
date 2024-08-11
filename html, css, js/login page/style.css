@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("wall.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+ 
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.login{
+    position: absolute;
+    height: 75vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(255, 255, 255, 0.133);
+}
+
+input{
+    position: relative;
+    width: 20vw;
+}
+
+.Enter{
+    color: blue;
+    text-shadow: blue 1px 0 10px;
+    position: relative;
+
+}

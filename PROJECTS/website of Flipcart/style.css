@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+header{
+    height: 76px;
+    background-color: white;
+}
+
+.nav{
+    display: flex;
+    height: 72px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+input{
+    height: 40px;
+    width: 530.25px;
+    font-size: large;
+}
+
+.navinput{
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(226, 228, 250);
+    align-content: center;
+}
+
+.search{
+    height: 40px;
+width: 44px;
+padding: 8px, 8px, 8px, 12px;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    header{
+        height: 48px;
+        background-color: white;
+    }
+    
+    .nav{
+        display: flex;
+        height: 48px;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    
+    input{
+        height: 40px;
+        width: 530.25px;
+        font-size: large;
+    }
+    
+    .navinput{
+        display: flex;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(226, 228, 250);
+        align-content: center;
+    }
+    
+    .search{
+        height: 40px;
+    width: 44px;
+    padding: 8px, 8px, 8px, 12px;
+    }
+    
+    
+}
+
+.secondnav{
+    background-color: white;
+    margin-top: 1vh;
+    width: 97.5vw;
+    height: 126px;
+    background-position: center center;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.img{
+    width: 130px;
+height: 126px;
+display: flex;
+flex-direction: column;
+   
+}
+
+.second{
+    display: flex;
+justify-content: center;
+}
+
+.img img{
+    height: 64px;
+width: 64px;
+margin-top: 20px;
+}
+
+.third{
+    display: flex;
+justify-content: center;
+}
+
+.video{
+    width: 97.5vw;
+    background-position: center center;
+    background-color: white;
+    margin-top: 2vh;
+    height: 0px;
+}
+
+.video video{
+    width: inherit;
+    height: 236px;
+background-position: center center;
+}
+
+
+.cotainer{
+    display: flex;
+}

@@ -1,0 +1,15 @@
+body{
+    background-color: gray;
+}
+
+.card{
+    background-color: white;
+    width: 194px;
+    height: 244px;
+    border-radius: 7px;
+
+}
+.logo{
+    height: 244px;
+    width: 194px;
+}
