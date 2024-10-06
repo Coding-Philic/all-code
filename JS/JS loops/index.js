@@ -1,6 +1,6 @@
 // console.log("hey i am a loop")
 
-// let a = 1;
+let a = 100;
 // // console.log(a);
 // // console.log(a + 1);
 // // console.log(a + 2);
@@ -8,7 +8,7 @@
 // // console.log(a + 4);
 
 
-// for (let i = 0; i < 100; i++) {
+// for (let i = 0; i < a; i++) {
 //     console.log(a + i);
 // }
 

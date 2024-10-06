@@ -4,6 +4,7 @@
 }
 body{
     background-image: url("wall.jpg");
+    background-size: 100wh;
     background-size: 100vw;
     background-repeat: no-repeat;
  
@@ -32,12 +33,71 @@ body{
 
 input{
     position: relative;
-    width: 20vw;
+    width: 30vw;
+    margin-bottom: 10px;
 }
 
 .Enter{
-    color: blue;
+    color: black;
     text-shadow: blue 1px 0 10px;
     position: relative;
 
+}
+
+    
+
+@media only screen and (max-width : 445px){
+   
+    body{
+        background-image: url("wall.jpg");
+        background-size: 100wh;
+        /* background-repeat: no-repeat; */
+     
+    }
+    
+    .main{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    
+    
+    .login{
+        position: absolute;
+        height: 80vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: rgba(255, 255, 255, 0.133);
+    }
+    
+    input{
+        position: relative;
+        width: 70vw;
+        height: 7vh;
+        border: none;
+        font-size: 20px;
+        margin-bottom: 10px;
+        background-color: rgba(201, 28, 28, 0.308);
+    }
+    
+    .Enter{
+        color: black;
+        text-shadow: blue 1px 0 10px;
+        position: relative;
+    
+    }
+    button{
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 15vw;
+        background-color: blue;
+        box-shadow: #2e6ffc 4px 2px 4px;
+    }
 }
