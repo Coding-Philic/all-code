@@ -1,0 +1,19 @@
+{
+  "name": "day",
+  "version": "1.1.1",
+  "description": "this is my day 1 of learning js in backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Adnan",
+  "license": "ISC",
+  "keywords": [
+    "day1"
+  ],
+  "dependencies": {
+    "express": "^4.21.0",
+    "slugify": "^1.6.6"
+  }
+}

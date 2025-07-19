@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google login</title>
+    <link rel="stylesheet" href="facebook.css">
+</head>
+
+<body>
+    <div class="container">
+        <img style="width: 110px;" src="assets/1657952217google-logo-png.webp" alt="">
+        <p>Enter User name or phone</p>
+        <input type="text">
+        <p>Passward</p>
+        <input type="password">
+        <button class="enter">Enter</button>
+    </div>
+    <script>
+        let enter = document.querySelector(".enter")
+        let newbutton = document.createElement("button")
+        newbutton.style.height = "30px"
+        newbutton.style.width = "25%"
+        newbutton.style.borderRadius = "25px"
+        newbutton.style.border = "none"
+        newbutton.style.backgroundImage = "linear-gradient(45deg, rgb(148 214 232), rgb(19 6 47))"
+        newbutton.innerHTML ="<a href='index.html'>back</a>"
+       newbutton.style.textDecoration = "none"
+      
+        
+    
+
+        let addbtn = () => {
+            let container = document.querySelector(".container")
+            container.append(newbutton)
+            enter.removeEventListener("click", addbtn)
+        }
+        enter.addEventListener("click", addbtn)
+
+
+
+
+    </script>
+</body>
+
+</html>

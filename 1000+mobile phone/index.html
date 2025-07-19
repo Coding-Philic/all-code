@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Phone Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .product-grid .product {
+      background-color: #f7f7f7;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-grid .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .product-grid .product h2 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .product-grid .product p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .loading-indicator {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="product-grid">
+      <div class="loading-indicator">Loading...</div>
+    </section>
+  </main>
+  <script>
+    const productGrid = document.querySelector('.product-grid');
+    const loadingIndicator = document.querySelector('.loading-indicator');
+
+    const products = [];
+
+    for (let i = 1; i <= 1000; i++) {
+      const product = {
+        id: i,
+        name: `Mobile Phone ${i}`,
+        brand: getRandomBrand(),
+        price: getRandomPrice(),
+        image: `product-images/mobile-phone-${i}.jpg`
+      };
+      products.push(product);
+    }
+
+    function getRandomBrand() {
+      const brands = ['Apple', 'Samsung', 'Google', 'OnePlus', 'Huawei'];
+      return brands[Math.floor(Math.random() * brands.length)];
+    }
+
+    function getRandomPrice() {
+      return Math.floor(Math.random() * 100000) + 100;
+    }
+
+    const chunkSize = 50;
+    const chunks = [];
+
+    for (let i = 0; i < products.length; i += chunkSize) {
+      chunks.push(products.slice(i, i + chunkSize));
+    }
+
+    chunks.forEach(chunk => {
+      const productHTML = chunk.map(product => {
+        return `
+          <div class="product">
+            <img src="${product.image}" alt="${product.name}">
+            <h2>${product.name}</h2>
+            <p>Brand: ${product.brand}</p>
+            <p>Price: ₹${product.price}</p>
+          </div>
+        `;
+      }).join('');
+
+      productGrid.insertAdjacentHTML('beforeend', productHTML);
+      loadingIndicator.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
